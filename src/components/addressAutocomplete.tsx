@@ -54,11 +54,11 @@ export function AddressAutocomplete({ setValue }) {
             <div>
               <input
                 {...getInputProps({
-                  className: "input input-bordered w-full max-w-xs",
+                  className: "input input-bordered w-full max-w-xs text-black",
                 })}
                 max="90"
               />
-              <div className="dropdown-content top-14 max-h-96 flex-col overflow-auto rounded-md bg-base-200">
+              <div className="dropdown-content top-14 max-h-96 flex-col overflow-auto rounded-md bg-black">
                 {suggestions.map((suggestion, index) => {
                   return (
                     <div

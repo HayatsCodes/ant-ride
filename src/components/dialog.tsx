@@ -14,7 +14,7 @@ export function CopyElement({ label, code }) {
       <span className="text-lg text-center">
         {label}: <strong>{code}</strong>
       </span>
-      <button className="btn btn-xs" onClick={() => copyContent(code)}>
+      <button className="btn btn-xs bg-black" onClick={() => copyContent(code)}>
         <CopyIcon />
       </button>
     </div>
@@ -28,12 +28,12 @@ const Dialog = forwardRef<HTMLDialogElement, DialogProps>((props, ref) => {
       id="success_modal"
       className="modal modal-middle"
     >
-      <div className="modal-box flex flex-col items-center justify-center gap-8">
+      <div className="modal-box flex flex-col items-center justify-center gap-8 bg-black">
         <h3 className="text-xl text-gray-200 font-bold text-center">{props.title}</h3>
         {props.children}
         <div className="modal-action my-0">
           <form method="dialog">
-            <button className="btn">Close</button>
+            <button className="btn bg-black">Close</button>
           </form>
         </div>
       </div>

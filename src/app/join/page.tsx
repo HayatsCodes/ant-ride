@@ -83,7 +83,7 @@ export default function Join() {
             </div>
             <input
               type="text"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-xs text-black"
               {...register("event_code")}
             />
             {errors.event_code?.message && <br />}

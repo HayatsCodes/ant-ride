@@ -18,7 +18,7 @@ export function CarpoolDetails({ register, setValue, errors, control }) {
           <input
             type="text"
             max="40"
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full max-w-xs text-black"
             {...register("name")}
           />
           {errors.name?.message && <br />}

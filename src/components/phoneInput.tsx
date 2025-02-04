@@ -28,7 +28,7 @@ export default function PhoneInput({ value, onChange }) {
           setPhone((prev) => [e.target.value, prev[1], prev[2]]);
           onChange(e.target.value + phone[1] + phone[2]);
         }}
-        className="input input-bordered w-16"
+        className="input input-bordered w-16 text-black"
       />
       <Separator />
       <input
@@ -43,19 +43,19 @@ export default function PhoneInput({ value, onChange }) {
           setPhone((prev) => [prev[0], e.target.value, prev[2]]);
           onChange(phone[0] + e.target.value + phone[2]);
         }}
-        className="input input-bordered w-16"
+        className="input input-bordered w-16 text-black"
       />
       <Separator />
       <input
         ref={ref3}
         type="text"
-        value={phone[2]}
+        value={phone[2]}  
         maxLength={4}
         onChange={(e) => {
           setPhone((prev) => [prev[0], prev[1], e.target.value]);
           onChange(phone[0] + phone[1] + e.target.value);
         }}
-        className="input input-bordered w-20"
+        className="input input-bordered w-20 text-black"
       />
     </div>
   );
